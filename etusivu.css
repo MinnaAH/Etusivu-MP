@@ -1,0 +1,115 @@
+/*Ominaisuudet määritelty ensimmäisenä pienille näytöille*/
+
+.header{
+	display: none;
+	width: 100%;
+	margin:0;
+	text-align: center;
+	background-color: #3357A7;
+	color: #ffffff;
+}
+
+.navigationMobile{
+	display: inline;
+}
+
+.navigationTablet{
+	display: none;
+}
+
+.nextMatchNav{
+	display: none;
+	padding-left: 35%;
+}
+
+.nextMatch{
+	display: block;
+}
+
+.logo{
+	width: 70px;
+}
+.fan{
+	display: none;
+}
+
+.sponsorsMobile{
+	display: inline;
+}
+
+.headline{
+	text-align: center;
+	font-family: 'Abel';
+}
+
+.text{
+	text-align: left;
+	font-size: 13px;
+	font-family: 'Abel';
+}
+
+.picture{
+	width: 100%;
+}
+
+
+.sponsors{
+	display: none;
+    width: 100%;
+    height: 100%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.imageCarousel{
+	text-align: center;
+	width: 50%; 
+	display: none;
+}
+
+.footer{
+	background-color: #057BFA;
+	color: #FFFFFF;
+	font-family: 'Abel';
+}
+
+/*Ominaisuudet keskikokoisille näytöille*/
+@media screen and (min-width: 768px){
+	.text{font-size: 16px;}
+	.navigationMobile{display: none;}
+	.navigationTablet{display:inline;}
+}
+
+/*Ominaisuudet suurilla näytöillä*/
+@media screen and (min-width: 1200px){
+	.navigationMobile {display: none;}
+	.navigationTablet{display:none;}
+	.nextMatchNav{display: inline;}
+	.nextMatch{display:none;}
+	.text{font-size: 16px;}
+	.sponsors{display: block;}
+	.fan{display: inline;}
+	.sponsorsMobile{display: none;}
+	.imageCarousel{display: inline;}
+}
